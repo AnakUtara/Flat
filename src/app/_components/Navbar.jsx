@@ -9,9 +9,12 @@ export default function Navbar({ menu, children }) {
 			<div className="drawer-content flex flex-col">
 				{/* Navbar */}
 				<div className="w-full navbar bg-base-100 sticky top-0 z-40">
-					<div className={`${anton.className} text-3xl flex-1 px-2 mx-2`}>
+					<Link
+						href={"/"}
+						className={`${anton.className} text-4xl flex-1 px-2 mx-2`}
+					>
 						Flat.
-					</div>
+					</Link>
 					<div className="flex-none sm:hidden">
 						<label
 							htmlFor="main-nav-drawer"
@@ -37,7 +40,7 @@ export default function Navbar({ menu, children }) {
 						<ul className="menu menu-horizontal">
 							{/* Navbar menu content here */}
 							{menu.map((item, key) => (
-								<li key={key}>
+								<li key={key} className="text-lg font-medium">
 									<Link
 										href={`/${key === 0 ? "/" : item.toLowerCase().split(" ").join("")}`}
 									>

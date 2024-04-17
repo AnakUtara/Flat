@@ -31,7 +31,7 @@ export default function AboutSection() {
 						and create a space that you'll love coming home to.
 					</p>
 					<Link
-						href={"/"}
+						href={"/aboutus"}
 						className="hidden self-end mt-5 rounded-none btn btn-wide lg:inline-flex btn-outline font-semibold"
 					>
 						Know Us More

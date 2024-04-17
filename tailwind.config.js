@@ -33,7 +33,7 @@ module.exports = {
 		themes: [
 			{
 				flat: {
-					primary: "#a991f7",
+					primary: "#052f2e",
 					secondary: "#f6d860",
 					accent: "#37cdbe",
 					neutral: "#3d4451",
