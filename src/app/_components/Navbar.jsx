@@ -8,10 +8,10 @@ export default function Navbar({ menu, children }) {
 			<input id="main-nav-drawer" type="checkbox" className="drawer-toggle" />
 			<div className="drawer-content flex flex-col">
 				{/* Navbar */}
-				<div className="w-full navbar bg-base-100 sticky top-0 z-40">
+				<div className="w-full navbar bg-base-100 sticky top-0 z-40 shadow-lg">
 					<Link
 						href={"/"}
-						className={`${anton.className} text-4xl flex-1 px-2 mx-2`}
+						className={`${anton.className} text-3xl lg:text-4xl flex-1 px-2 mx-2`}
 					>
 						Flat.
 					</Link>
@@ -40,7 +40,7 @@ export default function Navbar({ menu, children }) {
 						<ul className="menu menu-horizontal">
 							{/* Navbar menu content here */}
 							{menu.map((item, key) => (
-								<li key={key} className="text-lg font-medium">
+								<li key={key} className="text-md lg:text-lg font-medium">
 									<Link
 										href={`/${key === 0 ? "/" : item.toLowerCase().split(" ").join("")}`}
 									>

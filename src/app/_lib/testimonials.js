@@ -24,7 +24,7 @@ const testimonials = [
 		name: "Maria Garcia",
 		job: "Homeowner",
 		image:
-			"https://images.pexels.com/photos/1827054/pexels-photo-1827054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"https://images.pexels.com/photos/3016428/pexels-photo-3016428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
 		id: "tstmn-04",
@@ -33,7 +33,7 @@ const testimonials = [
 		name: "John Williams",
 		job: "Homeowner",
 		image:
-			"https://images.pexels.com/photos/3016428/pexels-photo-3016428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"https://images.pexels.com/photos/1827054/pexels-photo-1827054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 ];
 

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import heroImages from "../_lib/heroImages";
 import { useEffect, useState } from "react";
+import { anton } from "../_utils/fonts";
 
 export default function Hero() {
 	const [count, setCount] = useState(0);
@@ -40,20 +41,25 @@ export default function Hero() {
 				src={`${heroImages[count]}`}
 				alt="works"
 			/>
-			<div className="hero-overlay bg-gradient-to-br from-transparent border-t-orange-200 z-10"></div>
-			<div className="hero-content max-w-[1440px] text-right text-neutral-content z-20">
-				<div className="max-w-md">
-					<h1 className="mb-5 text-3xl font-bold">
-						Create Your Dream Flat:{" "}
-						<span className="font-normal">
-							Inspiring Interior Design Solutions
-						</span>
+			<div className="hero-overlay bg-gradient-to-br from-transparent to-gray-800 z-10"></div>
+			<div className="hero-content p-8 w-full text-right text-neutral-content z-20">
+				<div className="w-full">
+					<h1
+						className={`text-3xl lg:text-5xl min-[425px]:text-nowrap font-bold mb-2`}
+					>
+						Create Your Dream Flat
 					</h1>
-					<p className="mb-5 font-light">
+					<p className="text-sm min-[425px]:text-lg md:text-xl lg:text-3xl mb-2">
+						Inspiring Interior Design Solutions
+					</p>
+					<p className="text-xs min-[425px]:text-sm lg:text-lg mb-5 font-light">
 						We transform spaces into stunning and functional havens that reflect
 						your unique style.
 					</p>
-					<Link href={`/services`} className="btn rounded-none btn-primary">
+					<Link
+						href={`/services`}
+						className="btn btn-md lg:btn-lg rounded-none btn-primary"
+					>
 						Discover Our Design Expertise
 					</Link>
 				</div>
