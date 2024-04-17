@@ -13,7 +13,7 @@ export default function AboutSection() {
 				<h2
 					className={`font-bold text-2xl mr-10 sm:mr-16 lg:mr-0 lg:self-start`}
 				>
-					About Us.
+					About Us
 				</h2>
 				<img
 					className="hidden max-w-[480px] aspect-video object-cover transition-all duration-200 grayscale hover:grayscale-0 mx-16 xl:mx-48 lg:block"

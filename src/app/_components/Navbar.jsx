@@ -38,7 +38,9 @@ export default function Navbar({ menu, children }) {
 							{/* Navbar menu content here */}
 							{menu.map((item, key) => (
 								<li key={key}>
-									<Link href={`/${item.toLowerCase().split(" ").join("")}`}>
+									<Link
+										href={`/${key === 0 ? "/" : item.toLowerCase().split(" ").join("")}`}
+									>
 										{item}
 									</Link>
 								</li>
