@@ -119,8 +119,8 @@ const services = [
 		details:
 			"Finding the perfect furniture can be a daunting task. We take the stress out of furniture selection by sourcing high-quality pieces that reflect your style and budget. We work with a network of trusted vendors to provide you with a wide range of options, and we handle all aspects of procurement, ensuring a smooth delivery and installation process.",
 		benefits: [
-			"Expert guidance in selecting furniture that complements your design concept.",
 			"Access to a wide range of high-quality furniture options.",
+			"Expert guidance in selecting furniture that complements your design concept.",
 			"Stress-free furniture procurement with professional delivery and installation.",
 		],
 		process: [

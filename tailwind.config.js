@@ -34,8 +34,8 @@ module.exports = {
 			{
 				flat: {
 					primary: "#052f2e",
-					secondary: "#f6d860",
-					accent: "#37cdbe",
+					secondary: "#000000",
+					accent: "#0a5b59",
 					neutral: "#3d4451",
 					"base-100": "#E6E6DD",
 				},

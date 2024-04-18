@@ -8,12 +8,12 @@ export default function Navbar({ menu, children }) {
 			<input id="main-nav-drawer" type="checkbox" className="drawer-toggle" />
 			<div className="drawer-content flex flex-col">
 				{/* Navbar */}
-				<div className="w-full navbar bg-base-100 sticky top-0 z-40 shadow-lg">
+				<div className="w-full navbar justify-between bg-base-100 sticky top-0 z-40 shadow-lg">
 					<Link
 						href={"/"}
-						className={`${anton.className} text-3xl lg:text-4xl flex-1 px-2 mx-2`}
+						className={`${anton.className} text-4xl px-2 mx-2 tracking-tight`}
 					>
-						Flat.
+						Flat
 					</Link>
 					<div className="flex-none sm:hidden">
 						<label

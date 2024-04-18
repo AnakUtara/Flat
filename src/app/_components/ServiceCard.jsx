@@ -12,7 +12,7 @@ export default function ServiceCard({ data }) {
 			</figure>
 			<div className="card-body">
 				<h2 className="card-title">{data.title}</h2>
-				<p>{data.desc}</p>
+				<p className="text-sm md:text-base">{data.desc}</p>
 			</div>
 		</div>
 	);

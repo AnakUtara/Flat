@@ -7,7 +7,7 @@ import Testimonials from "./_components/Testimonials";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between bg-base-200">
+		<main className="bg-base-200">
 			<Hero />
 			<AboutSection />
 			<ServicesSection data={services} />

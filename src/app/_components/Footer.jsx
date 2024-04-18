@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
 	return (
 		<>
-			<footer className="footer p-10 bg-teal-950 text-neutral-content">
+			<footer className="footer p-10 bg-teal-950 text-base-100">
 				<aside>
 					<h2 className={`${anton.className} text-4xl`}>Flat.</h2>
 					<p className={`text-sm`}>Inspiring Interior Design Solutions.</p>
