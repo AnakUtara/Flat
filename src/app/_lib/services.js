@@ -2,7 +2,7 @@ const services = [
 	{
 		id: "sc-1",
 		imgUrl:
-			"https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"https://images.pexels.com/photos/279607/pexels-photo-279607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 		title: "Residential Design",
 		desc: "We design stunning and functional spaces for every room in your home.",
 		details:
@@ -39,7 +39,7 @@ const services = [
 	{
 		id: "sc-2",
 		imgUrl:
-			"https://images.pexels.com/photos/6969870/pexels-photo-6969870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"https://images.pexels.com/photos/6032416/pexels-photo-6032416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 		title: "Kitchen & Bath Design",
 		desc: "We create beautiful and efficient kitchens and bathrooms that meet your functional needs and aesthetic preferences.",
 		details:
@@ -113,7 +113,7 @@ const services = [
 	{
 		id: "sc-4",
 		imgUrl:
-			"https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"https://images.pexels.com/photos/112474/pexels-photo-112474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 		title: "Furniture Selection & Procurement",
 		desc: "We source high-quality furniture and decor that reflects your style and budget.",
 		details:

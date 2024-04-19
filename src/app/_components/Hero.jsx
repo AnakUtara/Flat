@@ -41,7 +41,7 @@ export default function Hero() {
 				src={`${heroImages[count]}`}
 				alt="works"
 			/>
-			<div className="hero-overlay bg-gradient-to-br from-transparent to-gray-800 z-10"></div>
+			<div className="hero-overlay bg-gradient-to-br from-transparent to-primary/60 z-10"></div>
 			<div className="hero-content p-8 w-full text-right text-neutral-content z-20">
 				<div className="w-full flex flex-col items-end">
 					<h1

@@ -15,12 +15,6 @@ import services from "../_lib/services";
 import Testimonials from "../_components/Testimonials";
 import testimonials from "../_lib/testimonials";
 
-// const iconStyle = {
-// 	width: "2em",
-// 	height: "2em",
-// 	fill: "#0a5b59",
-// };
-
 export default function Services() {
 	return (
 		<main className="bg-base-200">
@@ -47,14 +41,12 @@ export default function Services() {
 					key={service.id}
 					className="group bg-base-200 odd:bg-primary odd:text-base-100"
 				>
-					<div className="w-full relative">
-						<img
-							className="w-full aspect-[2/1] md:aspect-[3/1] object-cover"
-							src={service.imgUrl}
-							alt={service.title}
-						/>
+					<div
+						className="w-full aspect-square md:aspect-[2/1] lg:aspect-[3/1] bg-fixed bg-cover bg-bottom relative"
+						style={{ backgroundImage: `url(${service.imgUrl})` }}
+					>
 						<h2
-							className={`font-bold p-5 text-4xl lg:text-6xl absolute top-0 flex size-full justify-center items-center text-base-100 bg-zinc-800/50`}
+							className={`font-bold p-5 text-4xl lg:text-6xl absolute top-0 flex size-full justify-center items-center text-base-100 bg-zinc-800/30`}
 						>
 							{service.title}
 						</h2>
@@ -124,9 +116,9 @@ export default function Services() {
 					</article>
 				</div>
 			))}
-			<div className="w-full text-justify bg-[url('https://images.pexels.com/photos/1325761/pexels-photo-1325761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-top bg-cover">
+			<div className="w-full text-justify bg-[url('https://images.pexels.com/photos/1325761/pexels-photo-1325761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-fixed bg-top bg-cover">
 				<div className="flex flex-col items-center w-full bg-black/60 p-5 md:p-8">
-					<di className="w-96">
+					<div className="sm:w-96">
 						<p className="leading-7 text-balance text-base-100">
 							Simply by choosing
 							<br />
@@ -147,7 +139,7 @@ export default function Services() {
 						>
 							Meet Our Team
 						</Link>
-					</di>
+					</div>
 				</div>
 			</div>
 			<Testimonials data={testimonials} />

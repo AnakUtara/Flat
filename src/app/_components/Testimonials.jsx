@@ -1,39 +1,23 @@
 import { Carousel } from "flowbite-react";
 import { anton, hanken } from "../_utils/fonts";
-import PageSection from "./PageSection";
-
-const customCarouselTheme = {
-	root: {
-		base: "relative h-svh w-full",
-		leftControl:
-			"absolute left-0 top-0 flex items-center justify-center focus:outline-none",
-		rightControl:
-			"absolute right-0 top-0 flex items-center justify-center focus:outline-none",
-	},
-	indicators: {
-		base: "size-2 rounded-full",
-	},
-	control: {
-		base: "inline-flex h-svh px-1 items-center justify-center rounded-none transition-color duration-300 bg-base-300/0 group-hover:bg-base-300/50",
-		icon: "size-6 md:size-8 lg:size-10 text-base-100 lg:size-8",
-	},
-	scrollContainer: {
-		base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
-		snap: "snap-x",
-	},
-};
+import testimonialCarouselTheme from "../_utils/testimonialCarouselTheme";
 
 export default function Testimonials({ data }) {
 	return (
-		<PageSection customClass="w-full lg:flex-row justify-between relative">
+		<div className="w-full relative snap-start">
 			<h2
-				className={`${anton.className} tracking-tight absolute w-full font-bold text-5xl z-30 justify-end top-0 right-0 text-right p-5 md:p-8 text-base-100 text-nowrap`}
+				className={`${anton.className} hidden min-[425px]:block tracking-tight absolute w-full font-bold text-5xl z-30 top-0 right-0 text-right p-5 md:p-8 text-base-100 text-nowrap`}
 			>
 				Our
 				<br />
 				Clients
 			</h2>
-			<Carousel theme={customCarouselTheme} slideInterval={5000} pauseOnHover>
+			<h2
+				className={`${anton.className} min-[425px]:hidden tracking-tight absolute w-full font-bold text-5xl z-30 top-0 right-0 text-right p-5 md:p-8 text-base-100 text-nowrap`}
+			>
+				Our Clients
+			</h2>
+			<Carousel theme={testimonialCarouselTheme} slideInterval={6000}>
 				{data.map((t) => (
 					<div
 						key={t.id}
@@ -45,9 +29,7 @@ export default function Testimonials({ data }) {
 						<div
 							className={`flex flex-col h-full items-start max-w-[640px] justify-center text-base-100 p-10 md:px-20 md:py-0`}
 						>
-							<h2
-								className={`text-2xl sm:text-3xl lg:text-4xl font-bold drop-shadow-xl`}
-							>
+							<h2 className={`text-xl sm:text-3xl lg:text-4xl font-bold`}>
 								{t.details}
 							</h2>
 							<div className="divider before:bg-base-100 after:bg-base-100 my-2"></div>
@@ -65,6 +47,6 @@ export default function Testimonials({ data }) {
 					</div>
 				))}
 			</Carousel>
-		</PageSection>
+		</div>
 	);
 }

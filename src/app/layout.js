@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
 			<body className={`${hanken.className}`}>
 				<Navbar menu={["Home", "Services", "Teams", "About Us"]}>
 					{children}
+					<Footer />
 				</Navbar>
-				<Footer />
 			</body>
 		</html>
 	);
