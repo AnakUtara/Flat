@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
-import { anton, hanken } from "../_utils/fonts";
-import testimonialCarouselTheme from "../_utils/testimonialCarouselTheme";
+import { anton, hanken } from "../../_utils/fonts";
+import testimonialCarouselTheme from "../../_utils/testimonialCarouselTheme";
 
 export default function Testimonials({ data }) {
 	return (

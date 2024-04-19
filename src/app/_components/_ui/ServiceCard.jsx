@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ServiceCard({ data }) {
 	return (
 		<div className="card card-compact w-full sm:w-[48.6%] md:w-[48.8%] xl:w-[23.8%] transition-transform duration-300 xl:hover:scale-[1.02] rounded-none bg-base-100 shadow-md">

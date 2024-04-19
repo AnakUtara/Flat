@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { anton } from "../_utils/fonts";
+import { anton } from "../../_utils/fonts";
 
 export default function Navbar({ menu, children }) {
 	return (
@@ -8,24 +8,24 @@ export default function Navbar({ menu, children }) {
 			<input id="main-nav-drawer" type="checkbox" className="drawer-toggle" />
 			<div className="drawer-content h-dvh overflow-y-auto flex flex-col snap-y snap-proximity scroll-pt-16">
 				{/* Navbar */}
-				<div className="w-full navbar justify-between bg-base-100 sticky top-0 z-40 shadow-lg">
+				<div className="w-full navbar p-0 justify-between bg-base-100 sticky top-0 z-40 shadow-xl">
 					<Link
 						href={"/"}
-						className={`${anton.className} text-4xl px-2 mx-2 tracking-tight`}
+						className={`${anton.className} text-4xl p-5 tracking-tight`}
 					>
 						Flat
 					</Link>
-					<div className="flex-none sm:hidden">
+					<div className="flex-none h-full sm:hidden">
 						<label
 							htmlFor="main-nav-drawer"
 							aria-label="open sidebar"
-							className="btn btn-square btn-ghost"
+							className="btn btn-square btn-ghost h-full rounded-none"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
-								className="inline-block w-6 h-6 stroke-current"
+								className="inline-block w-6 h-full stroke-current"
 							>
 								<path
 									strokeLinecap="round"
@@ -36,12 +36,13 @@ export default function Navbar({ menu, children }) {
 							</svg>
 						</label>
 					</div>
-					<div className="flex-none hidden sm:block">
-						<ul className="menu menu-horizontal">
+					<div className="flex-none hidden sm:block h-full">
+						<ul className="menu menu-horizontal p-0 h-full">
 							{/* Navbar menu content here */}
 							{menu.map((item, key) => (
-								<li key={key} className="text-md lg:text-lg font-medium">
+								<li key={key} className="text-lg font-medium">
 									<Link
+										className="rounded-none py-0 px-4 flex justify-center items-center h-full"
 										href={`/${key === 0 ? "/" : item.toLowerCase().split(" ").join("")}`}
 									>
 										{item}
@@ -60,7 +61,7 @@ export default function Navbar({ menu, children }) {
 					aria-label="close sidebar"
 					className="drawer-overlay"
 				></label>
-				<ul className="menu menu-lg p-4 w-80 min-h-full bg-base-200">
+				<ul className="menu menu-lg px-0 py-5 w-64 bg-base-100 min-h-full">
 					{menu.map((item, key) => (
 						<li
 							key={key}
@@ -69,6 +70,7 @@ export default function Navbar({ menu, children }) {
 							}
 						>
 							<Link
+								className="rounded-none"
 								href={
 									key === 0 ? "/" : `/${item.toLowerCase().split(" ").join("")}`
 								}

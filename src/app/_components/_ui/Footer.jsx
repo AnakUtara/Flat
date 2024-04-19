@@ -1,6 +1,6 @@
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
-import { anton } from "../_utils/fonts";
-import services from "../_lib/services";
+import { anton } from "../../_utils/fonts";
+import services from "../../_lib/services";
 import Link from "next/link";
 
 export default function Footer() {
@@ -47,7 +47,7 @@ export default function Footer() {
 					</a>
 				</nav>
 			</footer>
-			<footer className="footer items-center py-4 px-10 bg-[#021413] text-neutral-content">
+			<footer className="footer items-center py-4 px-10 bg-secondary text-neutral-content">
 				<aside className="items-center grid-flow-col text-base-100">
 					<p>Copyright © {new Date().getFullYear()} - All right reserved</p>
 				</aside>

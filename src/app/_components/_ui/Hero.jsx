@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import heroImages from "../_lib/heroImages";
+import heroImages from "../../_lib/heroImages";
 import { useEffect, useState } from "react";
-import { anton } from "../_utils/fonts";
+import { anton } from "../../_utils/fonts";
 
 export default function Hero() {
 	const [count, setCount] = useState(0);

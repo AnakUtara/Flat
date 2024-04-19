@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PageSection from "./PageSection";
 import { anton } from "../_utils/fonts";
 
 export default function AboutSection() {
@@ -25,7 +24,7 @@ export default function AboutSection() {
 				/>
 				<div className="flex flex-col min-[425px]:w-60 md:w-96 lg:h-[300px] items-end justify-between">
 					<p
-						className={`font-light text-left min-[425px]:text-right leading-5 text-sm text-balance text-base-100 md:text-base`}
+						className={`font-light text-left min-[425px]:text-right leading-7 text-sm text-balance text-base-100 md:text-base`}
 					>
 						We are a passionate team of interior designers dedicated to crafting
 						exceptional living spaces that are both beautiful and functional. We
@@ -43,7 +42,7 @@ export default function AboutSection() {
 			</article>
 			<div className="px-5 pb-5 md:px-8 md:pb-8 lg:hidden">
 				<Link
-					href={"/"}
+					href={"/aboutus"}
 					className="rounded-none btn btn-block btn-lg btn-accent font-semibold"
 				>
 					Know Us More

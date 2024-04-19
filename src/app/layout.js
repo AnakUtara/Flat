@@ -1,6 +1,6 @@
 import { hanken } from "./_utils/fonts";
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
+import Navbar from "./_components/_ui/Navbar";
+import Footer from "./_components/_ui/Footer";
 import "./globals.css";
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${hanken.className}`}>
+			<body className={`${hanken.className} overflow-y-hidden`}>
 				<Navbar menu={["Home", "Services", "Teams", "About Us"]}>
 					{children}
 					<Footer />

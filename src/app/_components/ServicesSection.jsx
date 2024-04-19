@@ -1,6 +1,6 @@
 "use client";
 import { anton } from "../_utils/fonts";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./_ui/ServiceCard";
 import Link from "next/link";
 
 export default function ServicesSection({ data }) {

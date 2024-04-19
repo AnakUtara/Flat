@@ -12,30 +12,32 @@ import {
 	FaTruckRampBox,
 } from "react-icons/fa6";
 import services from "../_lib/services";
-import Testimonials from "../_components/Testimonials";
+import Testimonials from "../_components/_ui/Testimonials";
 import testimonials from "../_lib/testimonials";
+import PageHeader from "../_components/_ui/PageHeader";
 
 export default function Services() {
 	return (
 		<main className="bg-base-200">
-			<div className="flex flex-col gap-3 lg:flex-row lg:justify-between sm:items-start justify-center w-full p-5 md:p-8 bg-primary">
-				<h2
-					className={`${anton.className} text-7xl sm:text-8xl tracking-tight text-base-100`}
-				>
-					Our
-					<br />
-					Services
-				</h2>
-				<p
-					className={`font-light text-left lg:text-right lg:w-72 leading-7 text-sm text-balance md:text-base text-base-100`}
-				>
-					At <span className={`${anton.className}`}>Flat</span>, we believe your
-					home should be a sanctuary that reflects your unique personality and
-					lifestyle. We offer a comprehensive range of interior design services
-					to transform your living space, from initial consultations to final
-					installation. Let's explore how we can bring your dream home to life:
-				</p>
-			</div>
+			<PageHeader
+				title={
+					<>
+						Our
+						<br />
+						Services
+					</>
+				}
+				desc={
+					<>
+						At <span className={`${anton.className}`}>Flat</span>, we believe
+						your home should be a sanctuary that reflects your unique
+						personality and lifestyle. We offer a comprehensive range of
+						interior design services to transform your living space, from
+						initial consultations to final installation. Let's explore how we
+						can bring your dream home to life:
+					</>
+				}
+			/>
 			{services.map((service) => (
 				<div
 					key={service.id}
@@ -46,16 +48,14 @@ export default function Services() {
 						style={{ backgroundImage: `url(${service.imgUrl})` }}
 					>
 						<h2
-							className={`font-bold p-5 text-4xl lg:text-6xl absolute top-0 flex size-full justify-center items-center text-base-100 bg-zinc-800/30`}
+							className={`font-bold p-5 text-4xl lg:text-6xl absolute top-0 flex size-full justify-center items-center text-base-100 bg-zinc-800/40 z-30 shadow-inner shadow-black`}
 						>
 							{service.title}
 						</h2>
 					</div>
 					<article className="flex flex-wrap gap-5 justify-between p-5 md:p-8">
-						<div className="w-72">
-							<p className={`font-light leading-7 text-balance`}>
-								{service.details}
-							</p>
+						<div className="w-96">
+							<p className={`font-light leading-7`}>{service.details}</p>
 						</div>
 						<div className="w-72">
 							<h2 className="font-bold text-2xl">Benefits:</h2>
@@ -73,41 +73,43 @@ export default function Services() {
 								{service.process.map((step, i, self) => (
 									<li key={i}>
 										<div className="timeline-start">{step.title}</div>
-										<div className="timeline-middle mr-2">
-											{step.title.includes("Consultation") && (
-												<FaHandshake className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Measurements") && (
-												<FaCompassDrafting className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Development") && (
-												<FaAtom className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Furniture") && (
-												<FaCouch className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Fixture") && (
-												<FaKitchenSet className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("3D") && (
-												<FaCube className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Solutions") && (
-												<FaPeopleRoof className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
-											{step.title.includes("Installation") ||
-											step.title.includes("Implementation") ? (
-												<FaTrowelBricks className="size-8 fill-accent group-odd:fill-base-100" />
-											) : null}
-											{step.title.includes("Delivery") && (
-												<FaTruckRampBox className="size-8 fill-accent group-odd:fill-base-100" />
-											)}
+										<div className="timeline-middle">
+											<div className="size-9 p-2 rounded-full bg-accent group-odd:bg-base-100 my-1">
+												{step.title.includes("Consultation") && (
+													<FaHandshake className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Measurements") && (
+													<FaCompassDrafting className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Development") && (
+													<FaAtom className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Furniture") && (
+													<FaCouch className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Fixture") && (
+													<FaKitchenSet className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("3D") && (
+													<FaCube className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Solutions") && (
+													<FaPeopleRoof className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+												{step.title.includes("Installation") ||
+												step.title.includes("Implementation") ? (
+													<FaTrowelBricks className="size-5 fill-base-100 group-odd:fill-accent" />
+												) : null}
+												{step.title.includes("Delivery") && (
+													<FaTruckRampBox className="size-5 fill-base-100 group-odd:fill-accent" />
+												)}
+											</div>
 										</div>
 										<div className="timeline-end timeline-box text-wrap group-odd:bg-accent group-odd:border-emerald-800">
 											{step.desc}
 										</div>
 										{i !== self.length - 1 && (
-											<hr className="rounded-full bg-black/20 group-odd:bg-base-100/20" />
+											<hr className="rounded-full bg-accent group-odd:bg-base-100" />
 										)}
 									</li>
 								))}
