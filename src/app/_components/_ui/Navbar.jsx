@@ -6,7 +6,7 @@ export default function Navbar({ menu, children }) {
 	return (
 		<div className="drawer drawer-end">
 			<input id="main-nav-drawer" type="checkbox" className="drawer-toggle" />
-			<div className="drawer-content h-dvh overflow-y-auto flex flex-col snap-y snap-proximity scroll-pt-16">
+			<div className="drawer-content h-dvh overflow-y-auto flex flex-col lg:snap-y scroll-pt-16">
 				{/* Navbar */}
 				<div className="w-full navbar p-0 justify-between bg-base-100 sticky top-0 z-40 shadow-xl">
 					<Link

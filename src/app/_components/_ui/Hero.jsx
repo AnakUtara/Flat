@@ -30,6 +30,7 @@ export default function Hero({ children, data }) {
 				className={`hero-overlay h-[91dvh] object-cover`}
 				src={`${data[count2]}`}
 				alt="works"
+				rel="preload"
 			/>
 			<img
 				className={`hero-overlay h-[91dvh] object-cover ${
@@ -37,6 +38,7 @@ export default function Hero({ children, data }) {
 				}`}
 				src={`${data[count]}`}
 				alt="works"
+				rel="preload"
 			/>
 			<div className="hero-overlay h-[91dvh] bg-gradient-to-br from-transparent to-secondary/80 z-10"></div>
 			{children}
