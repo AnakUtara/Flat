@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
 	return (
 		<>
-			<footer className="footer p-10 bg-teal-950 text-base-100">
+			<footer className="footer p-5 md:p-8 bg-teal-950 text-base-100">
 				<aside>
 					<h2 className={`${anton.className} text-4xl`}>Flat.</h2>
 					<p className={`text-sm`}>Inspiring Interior Design Solutions.</p>
@@ -47,7 +47,7 @@ export default function Footer() {
 					</a>
 				</nav>
 			</footer>
-			<footer className="footer items-center py-4 px-10 bg-secondary text-neutral-content">
+			<footer className="footer items-center py-4 px-5 md:px-8 bg-secondary text-neutral-content">
 				<aside className="items-center grid-flow-col text-base-100">
 					<p>Copyright © {new Date().getFullYear()} - All right reserved</p>
 				</aside>

@@ -139,7 +139,7 @@ export default function Services() {
 							href={"/teams"}
 							className="btn btn-block text-nowrap rounded-none mt-5 font-bold"
 						>
-							Meet Our Team
+							Meet Our Design Team
 						</Link>
 					</div>
 				</div>

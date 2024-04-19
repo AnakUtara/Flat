@@ -10,7 +10,7 @@ const testimonialCarouselTheme = {
 		base: "size-2 rounded-full",
 	},
 	control: {
-		base: "inline-flex h-[90dvh] px-1 items-center justify-center rounded-none transition-color duration-300 bg-base-300/0 group-hover:bg-base-300/50",
+		base: "inline-flex h-[91dvh] px-1 items-center justify-center rounded-none transition-color duration-300 bg-base-300/0 group-hover:bg-base-300/50",
 		icon: "size-6 md:size-8 lg:size-10 text-base-100 lg:size-8",
 	},
 	scrollContainer: {
