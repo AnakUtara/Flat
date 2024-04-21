@@ -1,7 +1,7 @@
 import { anton } from "../_utils/fonts";
 import Link from "next/link";
 import Hero from "../_components/_ui/Hero";
-import aboutImages from "./_lib/aboutImages";
+import aboutImages from "../_lib/aboutImages";
 
 export default function AboutUs() {
 	return (

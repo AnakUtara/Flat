@@ -1,4 +1,5 @@
 import { FaMedal } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function TeamCard({ userData, jobData }) {
 	return (
@@ -12,7 +13,9 @@ export default function TeamCard({ userData, jobData }) {
 					{userData.name.last}
 				</h2>
 				<figure className="size-28 border-[2.5px] border-accent rounded-lg">
-					<img
+					<Image
+						width={112}
+						height={112}
 						src={userData.picture.large}
 						alt={`${userData.name.first} ${userData.name.last}'s Avatar`}
 					/>

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Hero({ children, data }) {
 	const [count, setCount] = useState(0);
@@ -24,21 +25,27 @@ export default function Hero({ children, data }) {
 		};
 	}, [count]);
 	return (
-		<div className="hero h-[91dvh]">
+		<div className="hero h-[91dvh] relative">
 			{/* image slideshow */}
-			<img
+			<Image
 				className={`hero-overlay h-[91dvh] object-cover`}
 				src={`${data[count2]}`}
 				alt="works"
-				rel="preload"
+				fill={true}
+				priority={true}
+				placeholder="blur"
+				blurDataURL={`${data[count2]}`}
 			/>
-			<img
+			<Image
 				className={`hero-overlay h-[91dvh] object-cover ${
 					isCounted ? "" : "animate-fadeOut"
 				}`}
 				src={`${data[count]}`}
 				alt="works"
-				rel="preload"
+				fill={true}
+				priority={true}
+				placeholder="blur"
+				blurDataURL={`${data[count2]}`}
 			/>
 			<div className="hero-overlay h-[91dvh] bg-gradient-to-br from-transparent to-secondary/80 z-10"></div>
 			{children}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { anton } from "../_utils/fonts";
 
 export default function AboutSection() {
@@ -17,8 +18,10 @@ export default function AboutSection() {
 					<br />
 					Story
 				</h2>
-				<img
-					className="hidden min-w-[320px] max-w-[480px] h-[300px] aspect-video object-cover mx-12 xl:mx-40 lg:block"
+				<Image
+					width={480}
+					height={300}
+					className="hidden min-w-[320px] max-w-[480px] aspect-video object-cover mx-12 xl:mx-40 lg:block"
 					src="https://images.pexels.com/photos/2962135/pexels-photo-2962135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 					alt="Flat Team"
 				/>
