@@ -1,6 +1,6 @@
 import axios from "axios";
-import teams from "./_lib/teams";
-import TeamCard from "./_components/TeamCard";
+import teams from "../_lib/teams";
+import TeamCard from "../_components/teams/TeamCard";
 import PageHeader from "../_components/_ui/PageHeader";
 import { anton } from "../_utils/fonts";
 
