@@ -4,7 +4,7 @@ import testimonialCarouselTheme from "../../_utils/testimonialCarouselTheme";
 
 export default function Testimonials({ data }) {
 	return (
-		<div className="w-full relative lg:snap-start">
+		<div className="w-full relative">
 			<h2
 				className={`${anton.className} hidden min-[425px]:block tracking-tight absolute w-full font-bold text-5xl z-30 top-0 right-0 text-right p-5 md:p-8 text-base-100 text-nowrap`}
 			>
