@@ -1,9 +1,15 @@
 import PageHeader from "../_components/_ui/PageHeader";
 import { anton } from "../_utils/fonts";
-import TeamsSection from "../_components/teams/TeamsSection";
-import { Suspense } from "react";
+import { CardSkeletons } from "../_components/teams/CardSkeleton";
+import dynamic from "next/dynamic";
 
 export default async function Teams() {
+	const DynTeamsSection = dynamic(
+		() => import("../_components/teams/TeamsSection"),
+		{
+			loading: () => <CardSkeletons />,
+		}
+	);
 	return (
 		<main className="bg-secondary">
 			<PageHeader
@@ -25,17 +31,7 @@ export default async function Teams() {
 				bgColor="bg-transparent"
 				textColor="text-base-100"
 			/>
-			<Suspense
-				fallback={
-					<>
-						<div className="grid place-items-center py-20 text-base-100">
-							<span className="loading loading-bars loading-lg"></span>
-						</div>
-					</>
-				}
-			>
-				<TeamsSection />
-			</Suspense>
+			<DynTeamsSection />
 		</main>
 	);
 }

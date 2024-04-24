@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TeamCard({ userData, jobData }) {
 	return (
-		<div className="card card-compact w-full sm:w-[48%] md:w-[48.5%] lg:w-[48.89%] xl:w-[32.29%] bg-base-100 rounded-none shadow-black shadow-md">
+		<div className="card card-compact bg-base-100 rounded-none shadow-black shadow-md">
 			<div className="flex justify-between items-center p-5 bg-primary">
 				<h2 className={`text-2xl text-base-100 card-title`}>
 					{userData.name.title}.
