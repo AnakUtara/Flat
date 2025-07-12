@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Flat – Faux Interior Design Agency
 
-## Getting Started
+**Live Site:** [https://flat-co.vercel.app](https://flat-co.vercel.app)
 
-First, run the development server:
+Flat is a minimalist, boxy-style company profile website for a fictitious interior design agency.  
+This project was created as an individual submission for the **JCWD 2024 2nd Module Front End Dev Code Challenge**, focusing on UI slicing, layouting, and dynamic data integration with Next.js, Tailwind CSS, and DaisyUI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Built with Next.js:** Leveraging the power of server-side rendering and React components for optimal performance and maintainability.
+- **Tailwind CSS & DaisyUI:** Rapid, utility-first styling and beautiful, ready-made UI components.
+- **Minimalist & Boxy Design:** Natural palette—leaf green and earthy cream—emphasizing clarity and aesthetics.
+- **Parallax Scrolling:** Services page features static image backgrounds with smooth parallax effect.
+- **Fake User API:** Teams page pulls dynamic data from a third-party REST API to demonstrate API integration.
+- **Responsive:** Fully responsive across desktop and mobile.
+- **Reusable Components:** Modular architecture for easy maintenance and scalability.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🖥️ Pages
 
-To learn more about Next.js, take a look at the following resources:
+- **Home:** Introduction and hero section with agency highlights.
+- **Services:** Overview of services with parallax static image backgrounds for immersive visual effect.
+- **Teams:** Dynamic rendering of team members using a fake user API.
+- **About Us:** Company story, vision, and values.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Tech Stack
 
-## Deploy on Vercel
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS, DaisyUI
+- **API:** Fake user data fetched from a third-party REST API
+- **Deployment:** Vercel – [https://flat-co.vercel.app](https://flat-co.vercel.app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🎯 What I Learned
+
+- Advanced usage of Next.js for UI slicing and routing
+- Building layouts and reusable components with Tailwind CSS and DaisyUI
+- Responsive design best practices
+- Consuming and displaying data from external REST APIs
+- Implementing parallax effects for enhanced user experience
+
+---
+
+## 📸 Design Highlights
+
+- Minimalistic, boxy layout
+- Earthy, natural color palette (leaf green & cream)
+- Static image backgrounds with parallax effect
+- Clean, accessible navigation
+
+---
+
+## 🛠️ Setup & Development
+
+1. **Clone the repo**
+    ```bash
+    git clone https://github.com/AnakUtara/Flat.git
+    ```
+
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3. **Run locally**
+    ```bash
+    npm run dev
+    ```
+
+4. **Visit**
+    ```
+    http://localhost:3000
+    ```
+
+---
+
+## 📄 License
+
+This project is for educational purposes as part of the JCWD 2024 Front End Dev Code Challenge.
